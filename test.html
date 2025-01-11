@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      height: 100%;
+    }
+
+    .form-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container {
+      padding: 20px;
+      background-color: white;
+      position: relative;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 25px;
+      color: #030303;
+      cursor: pointer;
+    }
+
+    .form-container input[type=text],
+    .form-container select {
+      width: 100%;
+      padding: 10px;
+      margin: 3px 0 15px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    .form-container .btn {
+      background-color: #3C2414;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+      opacity: 0.8;
+    }
+
+    .form-container .cancel {
+      background-color: red;
+    }
+
+    .form-container .btn:hover {
+      opacity: 1;
+    }
+
+    .form-container .cancel:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-popup" id="myForm">
+  <form id="contactForm" class="form-container">
+    <span class="close-btn" onclick="closeForm()">×</span>
+    <h4>Get More Details Enquire Now</h4>
+
+    <input type="text" id="name" placeholder="Name" name="name" required>
+    <input type="text" id="email" placeholder="Enter Email" name="email" required>
+    <input type="text" id="contact" placeholder="Contact" name="contact" required>
+
+    <select id="budget" name="Budget" required>
+      <option value="">Select Budget</option>
+      <option value="1cr-1.5cr">1 Cr - 1.5 Cr</option>
+      <option value="1cr-2cr">1 Cr - 2 Cr</option>
+      <option value="2cr-3cr">2 Cr - 3 Cr</option>
+      <option value="3cr-4cr">3 Cr - 4 Cr</option>
+    </select>
+
+    <select id="describes" name="describes" required>
+      <option value="">Select Description</option>
+      <option value="Business Owner">Business Owner</option>
+      <option value="C-Level Executive">C-Level Executive</option>
+      <option value="Prospective Homebuyer">Prospective Homebuyer</option>
+      <option value="Real Estate Investor">Real Estate Investor</option>
+    </select>
+
+    <button type="button" class="btn" onclick="sendEmail()">Send</button>
+  </form>
+</div>
+
+<script>
+  emailjs.init("t_70k4BOXnkGl5qGc"); // Replace with your correct User ID
+
+  window.onload = function () {
+    setTimeout(function () {
+      document.getElementById("myForm").style.display = "block";
+    }, 1000);
+  };
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+
+  function sendEmail() {
+    const formData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      contact: document.getElementById("contact").value,
+      budget: document.getElementById("budget").value,
+      describes: document.getElementById("describes").value,
+    };
+
+    emailjs
+      .send("service_ua83vk6", "template_jt7e6ps", formData)
+      .then(
+        function (response) {
+          alert("Message sent successfully!");
+          closeForm();
+        },
+        function (error) {
+          alert("Failed to send message. Please check console for details.");
+          console.error("EmailJS Error:", error);
+        }
+      );
+  }
+</script>
+
+</body>
+</html>
