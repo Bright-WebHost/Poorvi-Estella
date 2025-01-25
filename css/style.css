@@ -92,6 +92,7 @@ a:hover {
 /* CUSTOM CONTAINER */
 .container {
   max-width: 1280px;
+  
 }
 
 /* FORM ELEMENTS */
@@ -360,7 +361,7 @@ button[type=submit] {
   display: block;
   height: 2px;
   width: 30px;
-  background: #fff;
+  background: #3C2414;
   opacity: 1;
   position: absolute;
   left: 0;
@@ -694,21 +695,25 @@ button[type=submit] {
 
 /* NAVBAR */
 .navbar {
-  width: 100%;
   padding: 0;
   position: absolute;
   left: 0;
+  right: 0;
   top: 0;
   z-index: 3;
 }
 .navbar .container {
   flex-direction: column;
+  width: 100%;
 }
+
+
 .navbar .container .upper-side {
   width: 100%;
+  background-color: #F6EBD9;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 1px 0;
   align-items: center;
   transform: translateY(-80px);
   -webkit-transition: all 0.5s ease;
@@ -719,9 +724,11 @@ button[type=submit] {
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   transition-delay: 1.2s;
+  
 }
 .navbar .container .upper-side .logo {
-  margin-left: 0;
+  margin-left: 10px;
+
 }
 .navbar .container .upper-side .logo img {
   height: 78px;
@@ -779,7 +786,7 @@ button[type=submit] {
 .navbar .container .upper-side .hamburger {
   width: 30px;
   height: 21px;
-  margin-right: 0;
+  margin-right: 10px;
 }
 .navbar .container .menu {
   width: 100%;
