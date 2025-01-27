@@ -50,6 +50,15 @@ theme.
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:300,400,600,800&display=swap&subset=latin-ext");
 /* BODY */
+@font-face {
+  font-family: 'goudytrajan_bold';
+  src: url('./fonts/goudytrajan_bold.otf');
+}
+
+
+
+
+
 * {
   outline: none !important;
 }
@@ -57,7 +66,7 @@ theme.
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "goudytrajan_bold", sans-serif;
   color: #26282b;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -931,7 +940,7 @@ button[type=submit] {
   font-size: 40px;
   /* font-size: 3vw; */
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   color: #721F49;
   margin-bottom: 20px;
 }
@@ -1154,7 +1163,7 @@ button[type=submit] {
 .page-header .container h1 {
   font-size: 5vw;
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   color: #ebcfa7;
   margin-bottom: 20px;
 }
@@ -1226,7 +1235,7 @@ button[type=submit] {
 .intro .content-box h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .intro .content-box h4 span {
@@ -1340,7 +1349,7 @@ button[type=submit] {
 .benefits h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .benefits h4 span {
@@ -1405,7 +1414,7 @@ button[type=submit] {
 .recent-gallery h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .recent-gallery h4 span {
@@ -1520,7 +1529,7 @@ button[type=submit] {
 .property-calculator .content-box h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .property-calculator .content-box h4 span {
@@ -1583,7 +1592,7 @@ button[type=submit] {
 .property-plans h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .property-plans h4 span {
@@ -1676,7 +1685,7 @@ button[type=submit] {
 .get-consultation h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .get-consultation h4 span {
@@ -1734,7 +1743,7 @@ button[type=submit] {
 .recent-posts h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .recent-posts h4 span {
@@ -1810,7 +1819,7 @@ button[type=submit] {
 .property-customization h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .property-customization h4 span {
@@ -1848,7 +1857,7 @@ button[type=submit] {
 }
 .apartment h2 {
   font-size: 4vw;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 20px;
 }
 .apartment h2 span {
@@ -1950,7 +1959,7 @@ button[type=submit] {
 }
 .about-content h2 {
   font-size: 4vw;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 20px;
 }
 .about-content h2 span {
@@ -2031,7 +2040,7 @@ button[type=submit] {
 .certificates h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .certificates h4 span {
@@ -2079,7 +2088,7 @@ button[type=submit] {
 .facilities h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .facilities h4 span {
@@ -2158,7 +2167,7 @@ button[type=submit] {
 }
 .faq .sidebox h3 {
   display: block;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 20px;
 }
 .faq .sidebox p {
@@ -2181,7 +2190,7 @@ button[type=submit] {
   border: 1px solid #eee;
 }
 .sales-offices .office-box h5 {
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 20px;
   font-size: 26px;
 }
@@ -2222,7 +2231,7 @@ button[type=submit] {
 .intro-video h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .intro-video h4 span {
@@ -2272,7 +2281,7 @@ button[type=submit] {
 .press-relases figure figcaption h5 {
   display: block;
   font-size: 22px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .press-relases figure figcaption p {
@@ -2362,7 +2371,7 @@ button[type=submit] {
 .sales-team figure figcaption h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .sales-team figure figcaption h4 span {
@@ -2606,7 +2615,7 @@ button[type=submit] {
 .blog .sidebar .widget .title {
   width: 100%;
   display: block;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 20px;
 }
 .blog .sidebar .widget .categories {
@@ -2725,7 +2734,7 @@ button[type=submit] {
 .contact h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   margin-bottom: 15px;
 }
 .contact h4 span {
@@ -2907,7 +2916,7 @@ button[type=submit] {
   
 }
 .footer-bar .inner h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   font-size: 22px;
   margin-bottom: 15px;
 }
@@ -3021,7 +3030,7 @@ button[type=submit] {
 .footer .contact-box h5 {
   margin-bottom: 10px;
   font-size: 19px;
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
 }
 .footer .contact-box h3 {
   font-weight: 600;
@@ -3504,7 +3513,7 @@ button[type=submit] {
   
 }
 .footer-bar1 .inner h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "goudytrajan_bold", serif;
   font-size: 22px;
   margin-bottom: 15px;
 }

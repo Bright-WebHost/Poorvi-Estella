@@ -7,7 +7,7 @@
 @mixin transition{-webkit-transition: .25s ease-in-out;-moz-transition: .25s ease-in-out;-ms-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out;}
 
 @mixin first-font{font-family: 'Poppins', sans-serif;}
-@mixin second-font{font-family: 'Playfair Display', serif;}
+@mixin second-font{font-family: 'goudytrajan_bold', serif;}
 
 $color-light:#ebcfa7;
 $color-brown: #3C2414;
